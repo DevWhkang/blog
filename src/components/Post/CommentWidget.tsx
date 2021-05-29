@@ -1,12 +1,11 @@
 import React, { createRef, FunctionComponent, useEffect } from 'react';
 
-const src = 'https://utteranc.es/client.js';
-const repo = 'DevWhkang/whkang-dev-blog';
+// const src = 'https://utteranc.es/client.js';
+// const repo = 'DevWhkang/blog';
 
 type UtterancesAttributesType = {
   src: string;
   repo: string;
-  branch: string;
   'issue-term': string;
   label: string;
   theme: string;
@@ -23,9 +22,8 @@ const CommentWidget: FunctionComponent = () => {
     const utterances: HTMLScriptElement = document.createElement('script');
 
     const attributes: UtterancesAttributesType = {
-      src,
-      repo,
-      branch: 'main',
+      src: 'https://utteranc.es/client.js',
+      repo: 'devwhkang/blog',
       'issue-term': 'pathname',
       label: 'Comment',
       theme: `github-light`,
@@ -42,5 +40,5 @@ const CommentWidget: FunctionComponent = () => {
 
   return <div ref={element} />;
 };
-
+CommentWidget.displayName = 'Utterances';
 export default CommentWidget;
