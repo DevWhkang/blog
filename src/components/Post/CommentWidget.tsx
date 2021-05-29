@@ -1,11 +1,12 @@
 import React, { createRef, FunctionComponent, useEffect } from 'react';
 
 const src = 'https://utteranc.es/client.js';
-const repo = 'DevWhkang/whkang-dev-blog.github.io';
+const repo = 'DevWhkang/whkang-dev-blog';
 
 type UtterancesAttributesType = {
   src: string;
   repo: string;
+  branch: string;
   'issue-term': string;
   label: string;
   theme: string;
@@ -13,7 +14,7 @@ type UtterancesAttributesType = {
   async: string;
 };
 
-const CommentWidget: FunctionComponent = function () {
+const CommentWidget: FunctionComponent = () => {
   const element = createRef<HTMLDivElement>();
 
   useEffect(() => {
@@ -24,6 +25,7 @@ const CommentWidget: FunctionComponent = function () {
     const attributes: UtterancesAttributesType = {
       src,
       repo,
+      branch: 'main',
       'issue-term': 'pathname',
       label: 'Comment',
       theme: `github-light`,
