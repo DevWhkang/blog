@@ -43,7 +43,11 @@ const Layout: FunctionComponent<LayoutProps> = function ({
         <meta name="twitter:image" content={image} />
         <meta name="twitter:site" content="@사용자이름" />
         <meta name="twitter:creator" content="@사용자이름" /> */}
-        <html lang="ko" />
+      	<meta
+          name="google-site-verification"
+          content="웹 마스터 도구가 제공하는 Meta 태그"
+        /> 
+	 <html lang="ko" />
       </Helmet>
       <GlobalStyle />
       {children}
