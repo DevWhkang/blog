@@ -1,9 +1,9 @@
 ---
 date: '2021-05-27'
-title: 'Test'
-categories: ['Web', 'SEO']
+title: '바닐라 js'
+categories: ['vanillaJS']
 summary: '테스트 마크다운 포스트'
-thumbnail: './assets/test.png'
+thumbnail: '../assets/test.png'
 ---
 
 # 테스트 h1

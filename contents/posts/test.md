@@ -1,14 +1,14 @@
 ---
 date: '2021-05-27'
-title: 'Test'
+title: 'devwhkang'
 categories: ['Web', 'SEO']
-summary: '테스트 마크다운 포스트'
-thumbnail: './assets/test.png'
+summary: 'devwhkang test post'
+thumbnail: '../assets/test.png'
 ---
 
-# 테스트 h1
+# devwhkang h1
 
-테스트 글
+devwhkang 글입니다. 구글에 노출됩니다.
 
 ```js
 const a = 1;
@@ -18,6 +18,7 @@ console.log('테스트 마크다운 코드');
 ## 테스트 h2
 
 - 리스트1
+  - 리스트 아래 1
 - 리스트2
 
 1. 넘버1
