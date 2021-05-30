@@ -37,5 +37,5 @@ const CommentWidget: FunctionComponent = () => {
 
   return <div ref={element} />;
 };
-// CommentWidget.displayName = 'Utterances';
+
 export default CommentWidget;

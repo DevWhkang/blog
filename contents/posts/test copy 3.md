@@ -1,9 +1,9 @@
 ---
 date: '2021-05-27'
-title: '알고리즘'
-categories: ['Algorithm']
+title: 'Test'
+categories: ['Web', 'SEO']
 summary: '테스트 마크다운 포스트'
-thumbnail: './assets/test.png'
+thumbnail: '../assets/test.png'
 ---
 
 # 테스트 h1

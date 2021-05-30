@@ -9,7 +9,7 @@ module.exports = {
     // {
     //   resolve: 'gatsby-plugin-canonical-urls',
     //   options: {
-    //     siteUrl: 'https://DevWhkang.github.io/',
+    //     siteUrl: 'https://devwhkang.gatsbyjs.io',
     //     stripQueryString: true,
     //   },
     // },

@@ -1,3 +1,3 @@
 {
-  "origins": ["https://devwhkang.gatsbyjs.io/"]
+  "origins": ["https://devwhkang.gatsbyjs.io/", "http://localhost:8000"]
 }
