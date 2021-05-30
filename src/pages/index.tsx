@@ -20,6 +20,13 @@ interface IndexPageProps {
         fluid: FluidObject;
       };
     };
+    site: {
+      siteMetadata: {
+        description: string;
+        title: string;
+        siteUrl: string;
+      };
+    };
   };
 }
 
@@ -29,6 +36,9 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
     allMarkdownRemark: { edges },
     file: {
       childImageSharp: { fluid },
+    },
+    site: {
+      siteMetadata: { title, description, siteUrl },
     },
   },
 }) => {
@@ -63,7 +73,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
   );
 
   return (
-    <Layout>
+    <Layout title={title} description={description} url={siteUrl}>
       <Introduction profileImage={fluid} />
       <CategoryList
         selectedCategory={selectedCategory}
@@ -113,6 +123,13 @@ export const queryPostList = graphql`
         fluid(maxWidth: 120, maxHeight: 120, fit: INSIDE, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
+        description
+        siteUrl
       }
     }
   }
