@@ -1,18 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: 'whkang-devlog',
-    description: "whkang's devlog",
-    author: 'devwhkang',
-    // siteUrl: 'https://DevWhkang.github.io/',
+    title: 'DevWhkang Blog',
+    description: '안녕하세요 주니어 개발자 강원형 블로그입니다.',
+    author: 'DevWhkang',
+    siteUrl: 'https://devwhkang.gatsbyjs.io',
   },
   plugins: [
-    // {
-    //   resolve: 'gatsby-plugin-canonical-urls',
-    //   options: {
-    //     siteUrl: 'https://devwhkang.gatsbyjs.io',
-    //     stripQueryString: true,
-    //   },
-    // },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://devwhkang.gatsbyjs.io',
+        stripQueryString: true,
+      },
+    },
+    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-typescript',
       options: {
@@ -21,7 +28,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-emotion`,
-    // `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
