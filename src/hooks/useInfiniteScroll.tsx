@@ -32,18 +32,18 @@ const useInfiniteScroll = (
     [selectedCategory],
   );
 
-  const observer: IntersectionObserver = new IntersectionObserver(
-    (entries, observer) => {
-      if (!entries[0].isIntersecting) return;
-
-      setCount(value => value + 1);
-      observer.disconnect();
-    },
-  );
-
   useEffect(() => setCount(1), [selectedCategory]);
 
   useEffect(() => {
+    const observer: IntersectionObserver = new IntersectionObserver(
+      (entries, observer) => {
+        if (!entries[0].isIntersecting) return;
+
+        setCount(value => value + 1);
+        observer.disconnect();
+      },
+    );
+
     if (
       NUMBER_OF_ITEMS_PER_PAGE * count >= postListByCategory.length ||
       containerRef.current === null ||

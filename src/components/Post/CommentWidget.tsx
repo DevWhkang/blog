@@ -1,8 +1,5 @@
 import React, { createRef, FunctionComponent, useEffect } from 'react';
 
-// const src = 'https://utteranc.es/client.js';
-// const repo = 'DevWhkang/blog';
-
 type UtterancesAttributesType = {
   src: string;
   repo: string;
@@ -23,7 +20,7 @@ const CommentWidget: FunctionComponent = () => {
 
     const attributes: UtterancesAttributesType = {
       src: 'https://utteranc.es/client.js',
-      repo: 'devwhkang/blog',
+      repo: 'DevWhkang/blog',
       'issue-term': 'pathname',
       label: 'Comment',
       theme: `github-light`,
@@ -40,5 +37,5 @@ const CommentWidget: FunctionComponent = () => {
 
   return <div ref={element} />;
 };
-CommentWidget.displayName = 'Utterances';
+// CommentWidget.displayName = 'Utterances';
 export default CommentWidget;

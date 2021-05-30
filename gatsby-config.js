@@ -3,8 +3,16 @@ module.exports = {
     title: 'whkang-devlog',
     description: "whkang's devlog",
     author: 'devwhkang',
+    // siteUrl: 'https://DevWhkang.github.io/',
   },
   plugins: [
+    // {
+    //   resolve: 'gatsby-plugin-canonical-urls',
+    //   options: {
+    //     siteUrl: 'https://DevWhkang.github.io/',
+    //     stripQueryString: true,
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-typescript',
       options: {
