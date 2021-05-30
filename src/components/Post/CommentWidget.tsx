@@ -6,6 +6,7 @@ type UtterancesAttributesType = {
   repo: string;
   'issue-term': string;
   label: string;
+  id: string;
   theme: string;
   crossorigin: string;
   async: string;
@@ -29,7 +30,8 @@ const CommentWidget: FunctionComponent = () => {
       src: 'https://utteranc.es/client.js',
       repo: 'DevWhkang/blog',
       'issue-term': 'pathname',
-      label: 'Comment',
+      label: 'comment',
+      id: 'utterances',
       theme: `github-light`,
       crossorigin: 'anonymous',
       async: 'true',
