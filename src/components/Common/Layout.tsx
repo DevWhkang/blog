@@ -45,7 +45,7 @@ const Layout: FunctionComponent<LayoutProps> = function ({
         <meta name="twitter:creator" content="@사용자이름" /> */}
         <meta
           name="google-site-verification"
-          content="m5GcRexWHHjt90fa_v5RZkQ0Cwix34Jwn2IakAHpC1c"
+          content="nbNopzHow5vT3OH5DtBIF2nnBBu0GsO3s4n2sjvVrro"
         />
         <html lang="ko" />
       </Helmet>
