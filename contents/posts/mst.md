@@ -3,7 +3,7 @@ date: '2021-06-01'
 title: 'devwhkang'
 categories: ['Data structure', 'Algorithm']
 summary: '최소 신장 트리(Minimum Spanning Tree)에 대해 정리, 관련 개념과 실생활 응용을 다뤘습니다.'
-thumbnail: '../assets/network.jpeg'
+# thumbnail: '../assets/network.jpeg'
 ---
 
 # Overview
