@@ -1,9 +1,9 @@
 ---
 date: '2021-06-01'
-title: 'devwhkang'
+title: '최소 신장 트리(Minimum Spanning Tree) 개념 정리'
 categories: ['Data structure', 'Algorithm']
 summary: '최소 신장 트리(Minimum Spanning Tree)에 대해 정리, 관련 개념과 실생활 응용을 다뤘습니다.'
-# thumbnail: '../assets/network.jpeg'
+thumbnail: '../assets/network.jpg'
 ---
 
 # Overview
@@ -22,15 +22,15 @@ Kruskal과 Prim 알고리즘을 공부하기 위해 먼저 기본적인 최소 �
 
 신장 트리는 그래프 내의 모든 정점을 포함하는 트리이다. 신장 트리도 트리의 일종이고 모든 정점들이 연결되어 있다. 또한 사이클이 없어야 한다. 신장 트리는 n개의 정점을 n-1개의 간선으로 연결하게 되는데, 신장 트리를 찾기 위해서는 깊이 우선 탐색(BFS), 너비 우선 탐색(DFS)을 이용할 수 있다.
 
-<img src="../assets/graph.jpeg" alt="graph" style="zoom:15% ;" />
+![graph](../assets/graph.jpg 'graph')
 
 위와 같은 연결 그래프에서 깊이 우선 탐색(DFS) 으로 모든 노드를 포함하는 트리를 표현하면 아래와 같다.
 
-<img src="../assets/dfs-graph.jpeg" alt="dfs-graph" style="zoom:15%;" />
+![dfs-graph](../assets/dfs-graph.jpg 'dfs-graph')
 
 이번에는 너비 우선 탐색(BFS)로 표현하면 아래와 같다.
 
-<img src="/Users/devwhkang/Desktop/whkang-devlog/contents/assets/bfs-graph.jpeg" alt="bfs-graph" style="zoom:15%;" />
+![bfs-graph](../assets/bfs-graph.jpg 'bfs-graph')
 
 이런 식으로 어떤 정점을 기준으로 DFS/BFS를 할 것이냐에 따라 하나의 그래프에서 많은 신장 트리를 가질 수 있다. 즉, 신장 트리는 DFS/BFS 도중에 사용된 간선들만 모으면 만들 수 있다.
 
@@ -38,11 +38,11 @@ Kruskal과 Prim 알고리즘을 공부하기 위해 먼저 기본적인 최소 �
 
 앞서 컴퓨터 네트워크 통신망을 다시 한번 생각해보자. 가장 적은 비용으로 통신망을 구축하고자 한다면, 네트워크에 있는 모든 정점들을 가장 적은 수의 간선과 비용으로 연결하는 것이 좋다. 이때 최소 비용 신장 트리가 필요하다. 비용은 길이, 구축비용, 전송 시간 등의 가중치를 가질 수 있다.
 
-<img src="../assets/network.jpeg" alt="network" style="zoom:15%;" />
+![network](../assets/network.jpg 'network')
 
 위와 같은 서버(S), 데이터 센터(D)로 이루어진 네트워크 통신망인 가중치 그래프가 있다고 해보자. 각 간선의 가중치는 구축비용이라고 한다면 모든 정점이 연결되면서 구축비용이 가장 적게 드는 연결 방법을 구한다면 아래와 같이 될 것이다.
 
-<img src="../assets/mst.jpeg" alt="mst" style="zoom:15%;" />
+![mst](../assets/mst.jpg 'mst')
 
 최소 비용 신장 트리를 구한다면 다음과 같은 조건을 만족해야 한다.
 
