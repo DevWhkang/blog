@@ -1,3 +1,5 @@
+const { faFileExcel } = require('@fortawesome/free-solid-svg-icons');
+
 module.exports = {
   siteMetadata: {
     title: 'DevWhkang Blog',
@@ -69,6 +71,7 @@ module.exports = {
               maxWidth: 768,
               quality: 100,
               withWebp: true,
+              loading: 'lazy',
             },
           },
           {

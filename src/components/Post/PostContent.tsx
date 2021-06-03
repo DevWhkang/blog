@@ -21,21 +21,23 @@ const MarkdownRenderer = styled.div`
 
   // Apply Padding Attribute to All Elements
   p {
+    margin: 20px 0;
     padding: 3px 0;
   }
 
   // Adjust Heading Element Style
-  h1,
+  h1 {
+    border-bottom: 2px solid #c8c8c8;
+  }
   h2,
   h3 {
     font-weight: 800;
-    margin-bottom: 30px;
   }
 
   * + h1,
   * + h2,
   * + h3 {
-    margin-top: 80px;
+    margin-top: 30px;
   }
 
   hr + h1,
@@ -68,7 +70,7 @@ const MarkdownRenderer = styled.div`
   ol,
   ul {
     margin-left: 20px;
-    padding: 30px 0;
+    padding: 20px 10px;
   }
 
   // Adjust Horizontal Rule style
