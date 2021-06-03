@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
-import author from '../../../contents/assets/author.mp4';
+import author from '../../../contents/assets/author/author.mp4';
 import Img, { FluidObject } from 'gatsby-image';
 
 const ProfileVideoWrapper = styled.video`
