@@ -4,9 +4,9 @@ import GlobalStyle from './GlobalStyle';
 import Footer from './Footer';
 import { Helmet } from 'react-helmet';
 interface LayoutProps {
-  title: string;
-  description: string;
-  url: string;
+  title?: string;
+  description?: string;
+  url?: string;
   image?: string;
   children: ReactNode;
 }
