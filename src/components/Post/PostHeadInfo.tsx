@@ -88,7 +88,6 @@ const PostHeadInfo: FunctionComponent<PostHeadInfoProps> = ({
       <PrevPageIcon onClick={goBackPage}>
         <FontAwesomeIcon icon={faArrowLeft} />
       </PrevPageIcon>
-      console.log(title);
       <Title>{title}</Title>
       <PostData>
         <div>{categories.join(' / ')}</div>
