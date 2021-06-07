@@ -19,7 +19,8 @@ const PostHeadInfoWrapper = styled.div`
   color: #ffffff;
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 95%;
+    height: 105%;
     padding: 40px 20px;
   }
 `;
@@ -73,6 +74,10 @@ const PostData = styled.div`
     align-items: flex-start;
     font-size: 15px;
     font-weight: 400;
+
+    div {
+      margin-bottom: 5px;
+    }
   }
 `;
 
