@@ -23,6 +23,11 @@ const MarkdownRenderer = styled.div`
   p {
     margin: 20px 0;
     padding: 3px 0;
+
+    strong {
+      font-weight: 900;
+      color: #506EA5;
+    }
   }
 
   // Adjust Heading Element Style
@@ -128,6 +133,7 @@ const MarkdownRenderer = styled.div`
     hr {
       margin: 50px 0;
     }
+    
   }
 `;
 

@@ -1,5 +1,3 @@
-const { faFileExcel } = require('@fortawesome/free-solid-svg-icons');
-
 module.exports = {
   siteMetadata: {
     title: 'DevWhkang Blog',
@@ -12,7 +10,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://devwhkang.gatsbyjs.io',
-        sitemap: 'https://devwhkang.gatsbyjs.io/sitemap/sitemap-index.xml',
+        // sitemap: 'https://devwhkang.gatsbyjs.io/sitemap/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
