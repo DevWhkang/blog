@@ -26,9 +26,9 @@ thumbnail: '../assets/let-const-memory/reference.jpg'
 
 V8 엔진 내부 기억 공간은 두 가지로 나눠진다. 위 이미지에서 보이듯이 Memory Heap이라는 공간, Call Stack이라는 공간으로 나눠져서 데이터를 저장하고 관리한다. 변수 할당에서 Memory Heap과 Call Stack의 차이를 먼저 알아보자. Call Stack은 정적인 공간(공간 크기가 정해져 있는)이다. 데이터 원시 타입(Primitive Type), 함수 호출(Function Call)이 이곳에 저장된다. Heap은 동적인 공간(상황에 따라 커지고 작아지는)이다. 데이터 참조 타입(Reference Type)인 배열, 객체가 저장된다. 두 공간의 특성을 알았으니 이제 메모리 선언과 할당을 해보자.
 
-# `let`, `const` Keyword of Primitive Type
+# let, const Keyword of Primitive Type
 
-## `let` Keyword
+## let Keyword
 
 ```js
 let number = 100;
@@ -73,7 +73,7 @@ name + 'states';
 ![primitive-4](../assets/let-const-memory/primitive-4.jpg)
 
 
-## `const` Keyword
+## const Keyword
 
 그렇다면 const 키워드로 변수를 선언하면 어떻게 될까? const 키워드의 특성에는 재할당이 불가능하다는 점이다.(물론, TDZ와 관련한 특성도 있다) 아래 코드를 보자.
 
