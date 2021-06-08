@@ -4,7 +4,7 @@ import Layout from 'components/Common/Layout';
 import PostHead, { PostHeadProps } from 'components/Post/PostHead';
 import PostContent from 'components/Post/PostContent';
 import CommentWidget from 'components/Post/CommentWidget';
-
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 interface PostTemplateProps {
   data: {
     allMarkdownRemark: {
@@ -28,6 +28,8 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = ({
   const {
     node: { html, frontmatter },
   } = edges[0];
+
+  deckDeckGoHighlightElement();
 
   return (
     <Layout>

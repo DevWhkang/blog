@@ -26,7 +26,7 @@ const MarkdownRenderer = styled.div`
 
     strong {
       font-weight: 900;
-      color: #506EA5;
+      color: #506ea5;
     }
   }
 
@@ -34,7 +34,9 @@ const MarkdownRenderer = styled.div`
   h1 {
     border-bottom: 2px solid #c8c8c8;
   }
-  h2,
+  h2 {
+    margin-bottom: 20px;
+  }
   h3 {
     font-weight: 800;
   }
@@ -97,12 +99,20 @@ const MarkdownRenderer = styled.div`
     font-size: 15px;
 
     ::-webkit-scrollbar-thumb {
-      background: rgba(255, 255, 255, 0.5);
+      /* background: rgba(255, 255, 255, 0.5); */
+      background: #d5d5d5;
       border-radius: 3px;
     }
   }
 
-  code[class*='language-'],
+  code[class*='language-'] {
+    padding: 4px;
+    font-size: 14px;
+    background-color: #efefef;
+    color: #454545;
+    border-radius: 3px;
+    font-weight: bolder;
+  }
   pre[class*='language-'] {
     tab-size: 2;
   }
@@ -133,7 +143,6 @@ const MarkdownRenderer = styled.div`
     hr {
       margin: 50px 0;
     }
-    
   }
 `;
 
