@@ -52,6 +52,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         ) {
           edges {
             node {
+              frontmatter {
+                title
+              }
               fields {
                 slug
               }
@@ -77,13 +80,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   // Page Generating Function
   const generatePostPage = ({
     node: {
+      frontmatter: { title },
       fields: { slug },
     },
   }) => {
     const pageOptions = {
       path: slug,
       component: PostTemplateComponent,
-      context: { slug },
+      context: { slug, title },
     };
 
     createPage(pageOptions);
