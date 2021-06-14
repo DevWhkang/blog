@@ -16,17 +16,22 @@ const MarkdownRenderer = styled.div`
 
   // Markdown Style
   line-height: 1.8;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 
   // Apply Padding Attribute to All Elements
   p {
     margin: 20px 0;
     padding: 3px 0;
+    line-height: 30px;
 
     strong {
       font-weight: 900;
       color: #506ea5;
+    }
+
+    @media (max-width: 768px) {
+      line-height: 25px;
     }
   }
 
@@ -105,6 +110,16 @@ const MarkdownRenderer = styled.div`
     }
   }
 
+  deckgo-highlight-code {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+
+  blockquote::before {
+    background-color: #c8c8c8;
+  }
+
   code[class*='language-'] {
     padding: 4px;
     font-size: 14px;
@@ -112,6 +127,10 @@ const MarkdownRenderer = styled.div`
     color: #454545;
     border-radius: 3px;
     font-weight: bolder;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
   pre[class*='language-'] {
     tab-size: 2;
@@ -121,8 +140,13 @@ const MarkdownRenderer = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     padding: 80px 20px;
-    line-height: 1.6;
+    line-height: 1.7;
     font-size: 14px;
+
+    p {
+      line-height: 30px;
+      line-height: 2;
+    }
 
     h1 {
       font-size: 23px;

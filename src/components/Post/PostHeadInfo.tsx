@@ -54,11 +54,11 @@ const Title = styled.div`
   white-space: normal;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 800;
 
   @media (max-width: 768px) {
-    font-size: 25px;
+    font-size: 27px;
   }
 `;
 
