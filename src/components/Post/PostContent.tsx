@@ -72,10 +72,27 @@ const MarkdownRenderer = styled.div`
 
   // Adjust Quotation Element Style
   blockquote {
-    margin: 30px 0;
-    padding: 5px 15px;
-    border-left: 2px solid #000000;
+    margin: 20px;
+    padding-top: 10px;
+    background-color: #f6fdff;
+    border-left: 4px solid #bfbfbf;
     font-weight: 800;
+    color: #787878;
+    font-style: italic;
+    font-size: 17px;
+    border-radius: 3px 30px 30px 3px;
+
+    p {
+      margin: 10px 40px 0px;
+    }
+    ul {
+      margin: 10px 70px 25px;
+      padding: 0;
+
+      p {
+        margin: 0px 0px;
+      }
+    }
   }
 
   // Adjust List Element Style
@@ -114,10 +131,6 @@ const MarkdownRenderer = styled.div`
     margin-top: 50px;
     margin-bottom: 30px;
     font-size: 15px;
-  }
-
-  blockquote::before {
-    background-color: #c8c8c8;
   }
 
   code[class*='language-'] {
