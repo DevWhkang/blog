@@ -3,7 +3,7 @@ date: '2021-06-13'
 title: 'Application, Operating System, System Resource의 관계 with Node.js'
 categories: ['OS', 'JS', 'NODEJS']
 summary: 'Node.js에서 javascript가 어떻게 운영체제, 하드웨어와 상호작용하는지 그 흐름을 정리한다.'
-thumbnail: '../assets/async-sync-blocking-non-blocking/blocking.jpg'
+thumbnail: '../assets/os-systemcall/os-systemcall.jpg'
 ---
 
 # Overview
@@ -18,7 +18,7 @@ Node.js를 처음 공부하는 사람들이 내가 어떤 위치에서 프로그
 먼저 "운영체제의 역할이 무엇이냐?"부터 간단히 말하자면, 운영체제는 어플리케이션, 프로그램이 실행될 때 메모리를 허가하고 분배한다. 이로써 프로세스 상태가 된다. 그리고 프로그램이 요청하는 CPU 자원을 점유할 수 있도록 시간을 제공하며, 여러 프로세스가 CPU 자원을 점유할 수 있도록 스케줄링 한다. 또한 I/O 디바이스 사용을 허가 및 제어한다. 운영체제는 우리가 컴퓨터를 사용할 때 가장 처음에 만나는 하나의 커다란 소프트웨어인 것이다.
 
 
-![os-systemcall](/Users/devwhkang/Documents/blog/contents/assets/os-systemcall/os-systemcall.jpg)
+![os-systemcall](../assets/os-systemcall/os-systemcall.jpg)
 
 
 ## Shell
