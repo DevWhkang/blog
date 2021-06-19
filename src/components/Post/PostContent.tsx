@@ -74,7 +74,8 @@ const MarkdownRenderer = styled.div`
   blockquote {
     margin: 20px;
     padding-top: 10px;
-    background-color: #f6fdff;
+    padding-bottom: 25px;
+    background-color: #fafdfe;
     border-left: 4px solid #bfbfbf;
     font-weight: 800;
     color: #787878;
